@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="title" content="Organisation Name">
+    <meta name="description"
+        content="This is a website template. This is currently under testing">
+    <meta name="author" content="Katie Chen">
+    <meta charset="utf-8">
+
+    <title>Organisation Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script> <!--jquery: shorter syntax-->
+    <script src="main.js"></script> <!--main js file linked to html-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <a name="home" class="anchor"></a>
+
+<!--old NAV BAR
+    <div id="nav">
+      <div id="left">
+        <div id="logo">
+          <a href="#home" id="Home"><img src="img/BlueRose.jpg"></a>
+        </div>
+      </div>
+      <div id="right">
+        <div class="item">
+          <a href="#intro" id="Home">Home</a>
+        </div>
+        <div class="item">
+          <a href="about.html" id="About">About</a>
+        </div>
+        <div class="item">
+          <a href="events.html" id="Events">Events</a>
+        </div>
+        <div class="item">
+          <a href="contests.html" id="Contests">Contests</a>
+        </div>
+        <div class="item">
+          <a href="contact.html" id="Contact">Contact</a>
+        </div>
+      </div>
+    </div>
+-->
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./img/IMG_0638.JPG" width="30" height="30" alt="">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="events.html">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contests.html">Contests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacts.html">Contacts</a>
+      </li>
+  <!--
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  -->
+<!--Search
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+-->
+  </div>
+</nav>
+
+    <!--HOME SECTION-->
+    <div class="section home" id="top">
+
+      <!--#title for JS to find position of title and add .scrolled to nav bar-->
+      <div id="title">
+        <h1 style="font-size:8em;">Name</h1>
+        <p style="font-size:2em;">Mission statement</p>
+        <br>
+      </div>
+      <div>
+        <a href="#about"><div id="arrow"></div></a>
+      </div>
+    </div>
+
+
+    <!--SECTION-->
+    <div class="section white">
+
+      <a name="about" class="anchor" id="about"></a>
+
+      <div>
+        <h1 class="fadeIn">Overview</h1>
+        <div class="separator fadeIn" style="width:200px"></div> <!--the line between texts-->
+        <p class="fadeIn">Organisation hosts<a href="events.html"> events</a>
+          and <a href="contests.html">contests</a> to ...
+        </p>
+
+        <h1 class="fadeIn">Meet the Executives</h1>
+        <div class="separator fadeIn" style="width:250px;"></div>
+        <p class="fadeIn">Introduce Executives here</p>
+      </div>
+
+      <div id="execContainer">
+
+        <div class="exec" id="p2">
+          <div class="execPic">
+            <img style="float: left;" src="img/IMG_1178.jpg" alt="Name1">
+          </div>
+          <p>Name1</p>
+          <p>President</p>
+        </div>
+        <div class="exec" id="p2">
+          <div class="execPic">
+            <img src="img/IMG_1178.jpg" alt="Name2">
+          </div>
+          <p>Name2</p>
+          <p>Senior Vice President</p>
+        </div>
+        <div class="exec" id="p2">
+          <div class="execPic">
+            <img src="img/IMG_1178.jpg" alt="Name3">
+          </div>
+          <p>Name3</p>
+          <p>Vice President</p>
+        </div>
+        <div class="exec" id="p2">
+          <div class="execPic">
+            <img src="img/IMG_1178.jpg" alt="Name4">
+          </div>
+          <p>Name4</p>
+          <p>Senior Manager</p>
+        </div>
+        <div class="exec" id="p2">
+          <div class="execPic">
+            <img src="img/IMG_1178.jpg" alt="Name5">
+          </div>
+          <p>Name5</p>
+          <p>Manager</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<!-- FIX EVERYTHING BELOW THIS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- add in section -->
+      <div class="section white">
+
+        <a name="about" class="anchor" id="ABOUT"></a>
+      <div>
+        <h2 class="fadeIn" style="color:#6C7A89;">Brief Overview</h2>
+        <div class="separator fadeIn" style="width:200px"></div>
+        <p class="fadeIn">Insert information about organisation and stuffz bleh bleh bleh blah</p>
+      </div>
+
+    </div>
+
+    <!--CONTACT SECTION-->
+    <div class="section colored" style="top: 100px">
+      <a name="contact" class="anchor" id="CONTACT"></a>
+      <div>
+        <h1 style= "color: white">Contact</h1>
+        <p style= "color: white">If you have any questions, please email us at info@organisation.com.<br/>
+          Follow us on <a href="https://www.facebook.com/sample/" target="_blank">Facebook</a> and <a href="https://twitter.com/sample" target="_blank">Twitter</a> for more information.</p>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="section coloured" style="100px">
+      <div>
+        <p style="font-size:0.75em; color: white">Developed by Katie Chen</p>
+      </div>
+    </div>
+
+  </body>
+  </html>
